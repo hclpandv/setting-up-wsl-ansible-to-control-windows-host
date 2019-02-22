@@ -31,7 +31,7 @@ pip install pywinrm[credssp]
 sudo apt-get install krb5-user
 
 # Below Command will ask for the Password
-kinit vpandey
+kinit <YOUR_USERNAME>
 # Verify if the Kerberos all set
 echo "Verifying if the kerberos is all"
 klist
