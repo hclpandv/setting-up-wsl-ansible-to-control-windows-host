@@ -35,6 +35,12 @@ kinit vpandey
 # Verify if the Kerberos all set
 echo "Verifying if the kerberos is all"
 klist
+
 # Lets Test if the windows machine can be pinged from Windows Subsystem Linux
 ansible windows -i hosts -m win_ping
+
+# Gather all facts about your windows machine
+ansible windows -i hosts -m setup
+
+
 ```
